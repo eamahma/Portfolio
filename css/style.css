@@ -7,6 +7,10 @@
     --txt-color:rgb(55, 81, 105);
     --bg-txt-color:rgb(85, 182, 182);
     --rev-txt-color:rgb(85, 182, 182);
+    --small-margin: .5em;
+    --default-margin: 1em;
+    --underline-tickness: .2em;
+    --line-height: 1.5em;
 }
 
 /* Combined settings for header and nav */
@@ -19,8 +23,8 @@ header {
 
 h1 {
     background-color: var(--bg-txt-color);
-    padding: .5em;
-    margin-left: .5em;
+    padding: var(--small-margin);
+    margin-left: var(--small-margin);
     color: var(--txt-color);
 }
 
@@ -31,7 +35,7 @@ header nav {
 header nav a{
     text-decoration: none;
     font-size: larger;
-    border-bottom: .2em solid;
+    border-bottom: var(--underline-tickness) solid;
     margin: 1em;
     color: var(--rev-txt-color);
     text-align: center;
@@ -43,20 +47,20 @@ header nav a{
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    margin-top: 1em;
+    margin-top: var(--default-margin);
 }
 
 #about h2 {
     text-align: right;
     width: 15%;
-    margin-right: .5em;
+    margin-right: var(--small-margin);
 }
 
 #about p {
     width: 80%;
-    padding-left: .5em;
+    padding-left: var(--small-margin);
     text-align: left;
-    border-left: .2em solid var(--bkg-color);
+    border-left: var(--underline-tickness) solid var(--bkg-color);
 }
 
 
@@ -64,6 +68,6 @@ header nav a{
     header nav a{
         flex-direction: column;
         font-size: medium;
-        line-height: 1.5em;
+        line-height: var(--line-height);
     }
 }
