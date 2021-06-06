@@ -13,6 +13,10 @@
     --line-height: 1.5em;
 }
 
+header, main, footer, p, a {
+    color: var(--txt-color);
+}
+
 /* Combined settings for header and nav */
 header {
     display: flex;
@@ -82,6 +86,42 @@ figure h2 {
     padding-left: var(--small-margin);
     text-align: left;
     border-left: var(--underline-tickness) solid var(--bkg-color);
+}
+
+
+
+/* footer to show contacts and associated links */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: var(--default-margin);
+}
+
+footer h2 {
+    text-align: right;
+    width: 15%;
+    margin-right: var(--small-margin)
+}
+
+footer nav {
+    /* display: flex; */
+    position: relative;
+    flex: grow;
+    width: 80%;
+    padding-left: var(--small-margin);
+    text-align: center;
+    border-left: var(--underline-tickness) solid var(--bkg-color);
+}
+footer nav a{
+    /* position: relative; */
+    text-decoration: none;
+    font-size: medium;
+    /* flex-grow: 1;*//* need to ask */
+    border-bottom: var(--underline-tickness) solid;
+    margin: var(--default-margin);
+    color: var(--txt-color);
 }
 
 
