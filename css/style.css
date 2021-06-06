@@ -37,6 +37,29 @@ header nav a{
     text-align: center;
 }
 
+/* About Me section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#about h2 {
+    text-align: right;
+    width: 15%;
+    margin-right: .5em;
+}
+
+#about p {
+    width: 80%;
+    padding-left: .5em;
+    text-align: left;
+    border-left: .2em solid var(--bkg-color);
+}
+
+
 @media screen and (max-width: 768px) {
     header nav a{
         flex-direction: column;
