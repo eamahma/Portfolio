@@ -36,9 +36,30 @@ header nav a{
     text-decoration: none;
     font-size: larger;
     border-bottom: var(--underline-tickness) solid;
-    margin: 1em;
+    margin: var(--default-margin);
     color: var(--rev-txt-color);
     text-align: center;
+}
+
+/* banner defined in figure semanic tag */
+figure {
+    display: flex;
+    position: relative;
+    height: 10em;
+    width: 100%;
+    background-image: url("../img/20160906_092255.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+figure h2 {
+    position: absolute;
+    /* bottom: var(--default-margin);
+    right: var(--default-margin); */
+    bottom: 1em;
+    right: 1em;
+    background-color: var(--bg-txt-color);
+    padding: var(--small-margin)
 }
 
 /* About Me section */
