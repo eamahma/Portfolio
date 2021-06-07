@@ -203,11 +203,12 @@ footer nav a{
       flex-direction: column;
       line-height: var(--line-height);
     }
-  }
-
-  .other-project {
-    width: 97%;
+    .other-project {
+        width: 97%;
+    }
 }
+
+
 
 @media screen and (max-width: 320px) {
     header nav,
@@ -215,13 +216,14 @@ footer nav a{
       flex-direction: column;
       line-height: var(--line-height);
     }
-  }
 
-  .other-project {
-    width: 97%;
+    .other-project {
+        width: 97%;  
+    }
+
+    h2 {
+        font-size: small;
+    }
 }
 
-h2 {
-    font-size: small;
-}
 
