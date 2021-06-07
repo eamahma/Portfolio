@@ -27,8 +27,13 @@ header {
 }
 
 header img {
+    display: inline-block;
     border-radius: 50%;
     margin: var(--small-margin);
+}
+
+header div {
+    flex-direction: row;
 }
 
 h1 {
@@ -207,10 +212,16 @@ footer nav a{
     footer nav{
       flex-direction: column;
       line-height: var(--line-height);
+      font-size: large;
+    }
+
+    header nav a {
+        font-size: large;
     }
     .other-project {
         width: 97%;
     }
+
 }
 
 
@@ -220,6 +231,10 @@ footer nav a{
     footer nav {
       flex-direction: column;
       line-height: var(--line-height);
+    }
+
+    header nav a {
+        font-size: medium;
     }
 
     .other-project {
