@@ -169,6 +169,7 @@ footer {
     position: relative;
     width: 100%;
     margin-top: var(--default-margin);
+    margin-bottom: var(--default-margin);
 }
 
 footer h2 {
@@ -180,16 +181,16 @@ footer h2 {
 footer nav {
     /* display: flex; */
     position: relative;
-    flex: grow;
+    /* flex: grow; */
     width: 80%;
     padding-left: var(--small-margin);
     text-align: center;
     border-left: var(--underline-tickness) solid var(--bkg-color);
 }
 footer nav a{
-    /* position: relative; */
     text-decoration: none;
     font-size: medium;
+    /* ******* */
     /* flex-grow: 1;*//* need to ask */
     border-bottom: var(--underline-tickness) solid;
     margin: var(--default-margin);
@@ -197,9 +198,30 @@ footer nav a{
 }
 
 @media screen and (max-width: 768px) {
-    header nav a{
-        flex-direction: column;
-        font-size: medium;
-        line-height: var(--line-height);
+    header nav,
+    footer nav{
+      flex-direction: column;
+      line-height: var(--line-height);
     }
+  }
+
+  .other-project {
+    width: 97%;
 }
+
+@media screen and (max-width: 320px) {
+    header nav,
+    footer nav {
+      flex-direction: column;
+      line-height: var(--line-height);
+    }
+  }
+
+  .other-project {
+    width: 97%;
+}
+
+h2 {
+    font-size: small;
+}
+
