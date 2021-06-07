@@ -22,8 +22,13 @@ header, main, footer, p, a {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between;     */
+    justify-content: left;
     background-color: var(--bkg-color);
+}
+
+header img {
+    border-radius: 50%;
 }
 
 h1 {
