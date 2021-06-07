@@ -7,6 +7,7 @@
     --txt-color:rgb(55, 81, 105);
     --bg-txt-color:rgb(85, 182, 182);
     --rev-txt-color:rgb(85, 182, 182);
+    --border-color:rgb(85, 182, 182);
     --small-margin: .5em;
     --default-margin: 1em;
     --underline-tickness: .2em;
@@ -58,10 +59,8 @@ figure {
 
 figure h2 {
     position: absolute;
-    /* bottom: var(--default-margin);
-    right: var(--default-margin); */
-    bottom: 1em;
-    right: 1em;
+    bottom: var(--default-margin);
+    right: var(--default-margin);
     background-color: var(--bg-txt-color);
     padding: var(--small-margin)
 }
@@ -88,7 +87,84 @@ figure h2 {
     border-left: var(--underline-tickness) solid var(--bkg-color);
 }
 
+/* Work and projects are nested flex boxes */
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: var(--default-margin);    
+}
 
+#work h2 {
+    text-align: right;
+    width: 15%;
+    margin-right: var(--small-margin);    
+}
+
+/* projects main container */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80%;
+    padding-left: var(--small-margin);
+    /* margin-top: var(--default-margin);   */
+    border-left: var(--underline-tickness) solid var(--bkg-color);
+}
+
+/* all projects opacity set to 50% by default  */
+#projects img {
+    opacity: 0.5;
+}
+
+.main-project {
+    position: relative;
+    width: 97%;
+    height: 465px;
+    /* opacity: 0.5; */
+    /* background-image: url("../img/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position:center; */
+    border: .5em solid var(--border-color);
+    margin: 0 1em 1em 0;
+}
+
+.main-project div {
+    position: absolute;
+    bottom: 2em;
+    line-height: 1.5em;
+    padding: 1em;
+    background-color: var(--bg-txt-color);
+}
+
+.other-project {
+    position: relative;
+    width: 48%;
+    height: 235px;
+    /* opacity: 0.5; */
+    /* background-image: url("../img/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position:center; */
+    border: .5em solid var(--border-color);
+    margin: 0 1em 1em 0;
+}
+
+.other-project div {
+    position: absolute;
+    bottom: 2em;
+    line-height: 1.5em;
+    padding: 1em;
+    background-color: var(--bg-txt-color);
+}
+
+#proj1:hover img,
+#proj2:hover img, 
+#proj3:hover img, 
+#proj4:hover img, 
+#proj5:hover img{
+    opacity: 1;
+}
 
 /* footer to show contacts and associated links */
 footer {
@@ -123,7 +199,6 @@ footer nav a{
     margin: var(--default-margin);
     color: var(--txt-color);
 }
-
 
 @media screen and (max-width: 768px) {
     header nav a{
