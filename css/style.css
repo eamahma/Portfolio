@@ -118,11 +118,11 @@ figure h2 {
     opacity: 0.5;
 }
 
+ /* settings for main project */
 .main-project {
     position: relative;
     width: 97%;
     height: 465px;
-    /* opacity: 0.5; */
     /* background-image: url("../img/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position:center; */
@@ -130,14 +130,7 @@ figure h2 {
     margin: 0 1em 1em 0;
 }
 
-.main-project div {
-    position: absolute;
-    bottom: 2em;
-    line-height: 1.5em;
-    padding: 1em;
-    background-color: var(--bg-txt-color);
-}
-
+ /* Settings for other projects */
 .other-project {
     position: relative;
     width: 48%;
@@ -150,6 +143,8 @@ figure h2 {
     margin: 0 1em 1em 0;
 }
 
+/* text box on flex image */
+.main-project div,
 .other-project div {
     position: absolute;
     bottom: 2em;
@@ -158,6 +153,7 @@ figure h2 {
     background-color: var(--bg-txt-color);
 }
 
+/* Hovering on each project changing opactity */
 #proj1:hover img,
 #proj2:hover img, 
 #proj3:hover img, 
