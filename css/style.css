@@ -26,6 +26,11 @@ header {
     background-color: var(--bkg-color);
 }
 
+header img {
+    border-radius: 50%;
+    margin: var(--small-margin);
+}
+
 h1 {
     background-color: var(--bg-txt-color);
     padding: var(--small-margin);
