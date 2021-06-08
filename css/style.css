@@ -26,10 +26,20 @@ header {
     background-color: var(--bkg-color);
 }
 
+header div {
+    display: inline-flex;
+    position: relative;
+}
+
 header img {
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 50%;
     margin: var(--small-margin);
+}
+
+#avatar {
+    height: 100px;
+    width: 100px;
 }
 
 header div {
@@ -39,7 +49,9 @@ header div {
 h1 {
     background-color: var(--bg-txt-color);
     padding: var(--small-margin);
-    margin-left: var(--small-margin);
+    /* margin-left: var(--small-margin); */
+    /* margin: var(--small-margin); */
+    margin: 1em .5em 1em 0;
     color: var(--txt-color);
 }
 
@@ -119,7 +131,6 @@ figure h2 {
     position: relative;
     width: 80%;
     padding-left: var(--small-margin);
-    /* margin-top: var(--default-margin);   */
     border-left: var(--underline-tickness) solid var(--bkg-color);
 }
 
@@ -133,9 +144,6 @@ figure h2 {
     position: relative;
     width: 97%;
     height: 465px;
-    /* background-image: url("../img/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position:center; */
     border: .5em solid var(--border-color);
     margin: 0 1em 1em 0;
 }
@@ -145,10 +153,6 @@ figure h2 {
     position: relative;
     width: 48%;
     height: 235px;
-    /* opacity: 0.5; */
-    /* background-image: url("../img/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position:center; */
     border: .5em solid var(--border-color);
     margin: 0 1em 1em 0;
 }
@@ -200,8 +204,6 @@ footer nav {
 footer nav a{
     text-decoration: none;
     font-size: medium;
-    /* ******* */
-    /* flex-grow: 1;*//* need to ask */
     border-bottom: var(--underline-tickness) solid;
     margin: var(--default-margin);
     color: var(--txt-color);
@@ -212,7 +214,17 @@ footer nav a{
     footer nav{
       flex-direction: column;
       line-height: var(--line-height);
-      font-size: large;
+      /* font-size: large; */
+    }
+
+    h1 {
+        font-size: larger;
+        margin: 2em 1em 2em 0;
+    }
+
+
+    header nav {
+        margin: 2em .5em 2em .5em;
     }
 
     header nav a {
@@ -224,7 +236,43 @@ footer nav a{
 
 }
 
+@media screen and (max-width: 425px) {
+    header nav,
+    footer nav {
+      flex-direction: column;
+      line-height: var(--line-height);
+    }
 
+    header nav {
+        margin: 2em .5em 2em .5em;
+    }
+
+    header nav a {
+        font-size: medium;
+    }
+
+    header img {
+        margin: var(--default-margin);
+    }
+
+    .other-project {
+        width: 97%;  
+    }
+
+    h1 {
+        font-size: medium;
+        margin: 2em 1em 2em 0;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+    #avatar {
+        height: 60px;
+        width: 60px;
+    }
+}
 
 @media screen and (max-width: 320px) {
     header nav,
@@ -233,16 +281,30 @@ footer nav a{
       line-height: var(--line-height);
     }
 
+    header img {
+        margin: var(--default-margin);
+    }
+    
     header nav a {
-        font-size: medium;
+        font-size: small;
     }
 
     .other-project {
         width: 97%;  
     }
 
+    h1 {
+        font-size: medium;
+        margin: 2em 1em 2em 0;
+    }
+
     h2 {
         font-size: small;
+    }
+
+    #avatar {
+        height: 60px;
+        width: 60px;
     }
 }
 
