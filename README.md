@@ -49,3 +49,5 @@ The following image shows the web application's appearance and functionality:
 * CSS media querry used for couple of popular size screens
 * Original code refactored to improve efficiency
 * Links to nav bars directing to pages still in construction
+* CSS variables used to adjust colors, margins, lines with more flexibility
+* Avtar added to header
