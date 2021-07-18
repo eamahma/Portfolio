@@ -209,6 +209,12 @@ footer nav a{
 
 }
 
+.fa-phone-square-alt::before {
+    display: on;
+    /* content: '248-247-9282'; */
+}
+
+
 @media screen and (max-width: 768px) {
     header nav,
     footer nav{
