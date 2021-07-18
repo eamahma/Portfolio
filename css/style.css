@@ -5,9 +5,9 @@
 :root {
     --bkg-color:rgb(55, 81, 105);
     --txt-color:rgb(55, 81, 105);
-    --bg-txt-color:rgb(85, 182, 182);
-    --rev-txt-color:rgb(85, 182, 182);
-    --border-color:rgb(85, 182, 182);
+    --bg-txt-color:#17a2b8!important;
+    --rev-txt-color:#17a2b8!important;
+    --border-color:#17a2b8!important;
     --small-margin: .5em;
     --default-margin: 1em;
     --underline-tickness: .2em;

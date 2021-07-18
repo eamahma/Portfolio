@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- fontawsome added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- local style sheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
@@ -11,7 +23,7 @@
 
 <body>
     <!-- Header and navigation bar as one single flex box -->
-    <header>
+    <!-- <header>
         <div>
             <img src="./img/unnamed.jpg " alt="Avatar" id="avatar">
             <h1>Amir Ahmadi</h1>
@@ -22,7 +34,32 @@
             <a href="#contact">Contact</a>
             <a href="resume.html">Resume</a>
         </nav>
-    </header>
+    </header> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <img src="./img/unnamed.jpg" width="128" height="128" class="d-inline-block align-top rounded-circle"
+                alt="">
+            <h1 class="navbar-brand ml-2 bg-primary text-white fa-2x p-2" href="#">Amir Ahmadi</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto text-white mt-2 mt-lg-0 fa-1x">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">Connect</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
     <figure>
         <h2>See the big picture!</h2>
@@ -52,15 +89,16 @@
             <!-- Work Projects -->
             <div id="projects">
                 <div class="main-project" id="proj1">
-                    <a href="https://mels065.github.io/move-towards-the-movies/" target="_blank"><img src="./img/move-towards-the-movies.png" alt="project1" height="450"
-                            width="100%"></a>
+                    <a href="https://mels065.github.io/move-towards-the-movies/" target="_blank"><img
+                            src="./img/move-towards-the-movies.png" alt="project1" height="450" width="100%"></a>
                     <div>
                         <h3>Move Toward Movies</h3>
                         <p>Team Project</p>
                     </div>
                 </div>
                 <div class="other-project" id="proj2">
-                    <a href="https://eamahma.github.io/weather-dashboard/" target="_blank"><img src="./img/eamahma.github.io_weather-dashboard_.png" alt="project2" height="220"
+                    <a href="https://eamahma.github.io/weather-dashboard/" target="_blank"><img
+                            src="./img/eamahma.github.io_weather-dashboard_.png" alt="project2" height="220"
                             width="100%"></a>
                     <div>
                         <h3>Weather Dashboard</h3>
@@ -68,7 +106,8 @@
                     </div>
                 </div>
                 <div class="other-project" id="proj3">
-                    <a href="https://eamahma.github.io/Work_Day_Scheduler/" target="_blank"><img src="./img/eamahma.github.io_Work_Day_Scheduler_.png" alt="project3" height="220"
+                    <a href="https://eamahma.github.io/Work_Day_Scheduler/" target="_blank"><img
+                            src="./img/eamahma.github.io_Work_Day_Scheduler_.png" alt="project3" height="220"
                             width="100%"></a>
                     <div>
                         <h3>Work Day Scheduler</h3>
@@ -76,15 +115,16 @@
                     </div>
                 </div>
                 <div class="other-project" id="proj4">
-                    <a href="https://eamahma.github.io/Code-Quiz/" target="_blank"><img src="./img/eamahma.github.io_Code-Quiz_.png" alt="project4" height="220"
-                            width="100%"></a>
+                    <a href="https://eamahma.github.io/Code-Quiz/" target="_blank"><img
+                            src="./img/eamahma.github.io_Code-Quiz_.png" alt="project4" height="220" width="100%"></a>
                     <div>
                         <h3>Code Quiz</h3>
                         <p>JavaScript/CSS</p>
                     </div>
                 </div>
                 <div class="other-project" id="proj5">
-                    <a href="https://eamahma.github.io/password-generator/"  target="_blank"><img src="./img/eamahma.github.io_password-generator_.png" alt="project5" height="220"
+                    <a href="https://eamahma.github.io/password-generator/" target="_blank"><img
+                            src="./img/eamahma.github.io_password-generator_.png" alt="project5" height="220"
                             width="100%"></a>
                     <div>
                         <h3>Password Generator</h3>
@@ -106,6 +146,16 @@
             <a href="https://twitter.com/aammiirr" target="_blank">Twitter</a>
         </nav>
     </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
