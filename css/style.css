@@ -18,57 +18,15 @@ header, main, footer, p, a {
     color: var(--txt-color);
 }
 
-/* Combined settings for header and nav */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--bkg-color);
-}
-
-header div {
-    display: inline-flex;
-    position: relative;
-}
-
-header img {
-    /* display: inline-block; */
-    border-radius: 50%;
-    margin: var(--small-margin);
-}
-
-#avatar {
-    height: 100px;
-    width: 100px;
-}
-
-header div {
-    flex-direction: row;
-}
-
 h1 {
     background-color: var(--bg-txt-color);
     padding: var(--small-margin);
     /* margin-left: var(--small-margin); */
     /* margin: var(--small-margin); */
-    margin: 1em .5em 1em 0;
+    margin: 1em .5em 0em 0;
     color: var(--txt-color);
 }
 
-header nav {
-    margin: 3em 1em 3em 1em;
-
-}
-header nav a{
-    text-decoration: none;
-    font-size: larger;
-    border-bottom: var(--underline-tickness) solid;
-    margin: var(--default-margin);
-    color: var(--rev-txt-color);
-    text-align: center;
-}
-
-/* banner defined in figure semanic tag */
 figure {
     display: flex;
     position: relative;
@@ -84,7 +42,9 @@ figure h2 {
     bottom: var(--default-margin);
     right: var(--default-margin);
     background-color: var(--bg-txt-color);
-    padding: var(--small-margin)
+    padding: var(--small-margin);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
 }
 
 /* About Me section */
@@ -145,7 +105,7 @@ figure h2 {
     width: 97%;
     height: 465px;
     border: .5em solid var(--border-color);
-    margin: 0 1em 1em 0;
+    margin: 0 1em 0 0;
 }
 
  /* Settings for other projects */
@@ -154,7 +114,7 @@ figure h2 {
     width: 48%;
     height: 235px;
     border: .5em solid var(--border-color);
-    margin: 0 1em 1em 0;
+    margin: 0 1em 0 0;
 }
 
 /* text box on flex image */
@@ -176,136 +136,37 @@ figure h2 {
     opacity: 1;
 }
 
-/* footer to show contacts and associated links */
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    margin-top: var(--default-margin);
-}
+.main-project p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;    
+    line-height: 1.5;
+    color: white;
+  }
 
-footer h2 {
-    text-align: right;
-    width: 15%;
-    margin-right: var(--small-margin);
-    margin-bottom: 3em;
-}
+  .other-project p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;    
+    line-height: 1.5;
+    color: white;
+  }
+  
 
-footer nav {
-    position: relative;
-    width: 80%;
-    padding-left: var(--small-margin);
-    text-align: center;
-    border-left: var(--underline-tickness) solid var(--bkg-color);
-    margin-bottom: 3em;
-}
-footer nav a{
-    text-decoration: none;
-    font-size: medium;
-    border-bottom: var(--underline-tickness) solid;
-    margin: var(--default-margin);
-    color: var(--txt-color);
+ #about h2,
+ #work h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+  }
 
-}
+  .other-project h3,
+  .main-project h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: white;
+  }
 
-
-
-@media screen and (max-width: 768px) {
-    header nav,
-    footer nav{
-      flex-direction: column;
-      line-height: var(--line-height);
-    }
-
-    h1 {
-        font-size: larger;
-        margin: 2em 1em 2em 0;
-    }
-
-
-    header nav {
-        margin: 2em .5em 2em .5em;
-    }
-
-    header nav a {
-        font-size: large;
-    }
+@media screen and (max-width: 998px) {
     .other-project {
         width: 97%;
-    }
-
-}
-
-@media screen and (max-width: 425px) {
-    header nav,
-    footer nav {
-      flex-direction: column;
-      line-height: var(--line-height);
-    }
-
-    header nav {
-        margin: 2em .5em 2em .5em;
-    }
-
-    header nav a {
-        font-size: medium;
-    }
-
-    header img {
-        margin: var(--default-margin);
-    }
-
-    .other-project {
-        width: 97%;  
-    }
-
-    h1 {
-        font-size: medium;
-        margin: 2em 1em 2em 0;
-    }
-
-    h2 {
-        font-size: small;
-    }
-
-    #avatar {
-        height: 60px;
-        width: 60px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    header nav,
-    footer nav {
-      flex-direction: column;
-      line-height: var(--line-height);
-    }
-
-    header img {
-        margin: var(--default-margin);
-    }
-    
-    header nav a {
-        font-size: small;
-    }
-
-    .other-project {
-        width: 97%;  
-    }
-
-    h1 {
-        font-size: medium;
-        margin: 2em 1em 2em 0;
-    }
-
-    h2 {
-        font-size: small;
-    }
-
-    #avatar {
-        height: 60px;
-        width: 60px;
     }
 }
 
