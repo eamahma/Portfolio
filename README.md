@@ -33,7 +33,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following image shows the web application's appearance and functionality:
 
-![My portfolio webpage includes a navigation bar, a header image, and navigation bar to link to "About Me", "Work", and "Contact Me" sections; each project in "Work" section will link to additional pages which are still in construction](./img/portfolio_screenshot_index.png)
+![My portfolio webpage includes a navigation bar, a header image, and navigation bar to link to "About Me", "Work", and "Contact Me" sections; each project in "Work" section will link to additional pages which are still in construction](./img/127.0.0.1_5502_index.html.png)
 > **Note**: This layout is designed for supporting reponsive design with various screen widths for viewing.
 
 ## Link to web page
@@ -51,3 +51,10 @@ The following image shows the web application's appearance and functionality:
 * Links to nav bars directing to pages still in construction
 * CSS variables used to adjust colors, margins, lines with more flexibility
 * Avtar added to header
+
+## recent updates
+* Avtar swapped with personal photo
+* Resume in PDF format added
+* Used Bootstrap instead of CSS and most of original CSS became irrelevant and removed
+* Used Fontawsome
+* Team project and four other previous homeworks added
