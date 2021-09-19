@@ -30,9 +30,9 @@ h1 {
 figure {
     display: flex;
     position: relative;
-    height: 10em;
+    height: 20em;
     width: 100%;
-    background-image: url("../img/windsor-on.jpeg");
+    background-image: url("../img/banner.png");
     background-size: cover;
     background-position:center;
 }
